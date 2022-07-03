@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://prodraw.net/favicon/download.php?file=ngu82py2_1.ico" type="image/x-icon" />
+    <title>PriCipher</title>
+    <link rel="icon" href="img41.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+<!--     <link rel="stylesheet" href="stylea.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Region', ' Price in Rs /Quintal'],
+          ['Gujarat',  136.1],
+          ['Haryana',  136.3],
+          ['Assam', 221.3],
+          ['Karnataka',  137.1],
+          ['Manipur',  137.5],
+          ['Chattisgarh',  223.3], 
+          ['Arunachal Pradesh',  223.5],
+          ['Bihar',  137.6],
+          ['Andhra Pradesh ',  145.5],
+          ['Meghalaya',  230.2],
+          ['West Bengal', 139.4],
+          ['Maharashtra',  245],
+          ['Madhya Pradesh', 251.7],
+          ['Kerala', 232.9],
+          ['Jharkhand',  232.9],
+          
+          
+          
+          
+        ]);
+
+        var options = {
+          title: '',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+          
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Region', 'Price in Rs /Quintal'],
+          ['Andhra Pradesh ',     157.6],
+          ['Gujarat',     150.8],
+          ['Himachal Pradesh',  249.1],
+          ['Maharashtra', 163.7],
+          ['West Bengal',    148.5]
+        ]);
+
+        var options = {
+          title: '',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     <script type="text/javascript">
+       google.charts.load('current', {'packages':['corechart']});
+       google.charts.setOnLoadCallback(drawVisualization);
+ 
+       function drawVisualization() {
+         // Some raw data (not necessarily accurate)
+         var data = google.visualization.arrayToDataTable([
+           ['Region', '2016', '2017', '2018', '2019', '2020', 'Population'],
+           ['North',  81505,      130459,         150599,             60122,           72253,      36707.8129],
+           ['West',  90625,      142948,        169442,             67797,          81012,      29571.1593],
+           ['South',  100940,      157594,       189098,             77356,           89671,      30575.9987],
+           ['East',  103319,      170045,        206461,             81405,          100059,      29665.4616],
+           ['North East',  100888,      168293,         210266,             82123,         100069,      5008.0598]
+         ]);
+ 
+         var options = {
+           title : '',
+           vAxis: {title: ''},
+           hAxis: {title: ''},
+           seriesType: 'bars',
+           series: {5: {type: 'line'}}
+         };
+ 
+         var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+         chart.draw(data, options);
+       }
+     </script>
+   
+
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#" style="background-color:rgba(36, 29, 29, 0.7); color:rgb(252, 252, 252)">Pri<span>Cipher</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">Project</a></li>
+                <li><a href="#services" class="menu-btn">Technology</a></li>
+                <li><a href="#skills" class="menu-btn">Prediction</a></li>
+                <li><a href="#teams" class="menu-btn">T9 Group</a></li>
+                <li><a href="#contact" class="menu-btn">Feedback</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content" style="background-color:rgba(0,0,0,0.7)">
+                <div class="text-1">On behalf of T9 Group,</div>
+                <div class="text-2">Welcome to the Pri<span>Cipher</span>!</div>
+                <div class="text-3">Here, you get <span class="typing"></span></div>
+                <a href="#skills">Predict Price</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">The Project</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="vit.png" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">Using <span class="typing-2"></span>,</div>
+                    <p>We present PriCipher, a graphical user interface which can predict the prices of the 2 major crops namely: RICE and WHEAT of all the states of the Republic of India.<br>Since food grains are the most important part of the diet of any household, all efforts must be made to ensure stability of prices and adequate competition, which will ensure prosperity for farmers, consumers and the national economy at large. <br>Our project aims to rigorously study the factors affecting food grain prices in various parts of the country and to predict with reasonable accuracy the future course which the aforementioned prices will take, and which can be used as a tool by farmers, consumers and policymakers.
+                        .<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Our Technology</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fab fa-python"></i>
+                        <div class="text">Python</div>
+                        <p>Being a language with a simple syntax, rich libraries and many user-friendly platforms, Python was employed by T9 Group for data science.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fab fa-js-square"></i>
+                        <div class="text">JavaScript</div>
+                        <p>JavaScript is an astonishingly versatile and rich programming language, with the additional benefit of being object oriented and the language of the web.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">HTML & CSS</div>
+                        <p>No website is can function without extensive usage of the Hyper Text Markup Language(HTML) and Cascading Style Sheets(CSS) and never will. </p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+         
+    </section>
+   <!-- chart section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Data Visualization</h2>
+           
+        </div>
+    </section>
+<div class="slideshow-container">
+
+            <div class="mySlides fade">
+            
+            <img src="img21.png" style="width:60% ;height: 600px; margin-left: 300px;">
+            
+            </div>
+        
+            <div class="mySlides fade">
+            
+            <img src="img22.png" style="width:60% ;height: 600px; margin-left: 300px;">
+            
+            </div>
+        
+            <div class="mySlides fade">
+           
+            <img src="img23.png" style="width:60% ;height: 600px; margin-left: 300px;">
+            
+            </div>
+        
+            <div class="mySlides fade">
+            
+            <img src="img24.png" style="width:60% ;height: 600px; margin-left: 300px;">
+            
+            </div>
+            <div class="mySlides fade">
+            
+            <img src="img25.png" style="width:60% ;height: 600px; margin-left: 300px;">
+            
+            </div>
+            <div class="mySlides fade">
+            
+            <img src="img26.png"style="width:60% ;height: 600px; margin-left: 300px;">
+            
+            </div>
+            <div class="mySlides fade">
+            
+            <img src="img27.png" style="width:60% ;height: 600px; margin-left: 300px;">
+            
+            </div>
+            <div class="mySlides fade">
+            
+            <img src="img28.png"style="width:60% ;height: 600px; margin-left: 300px;">
+            
+            </div>
+            <div class="mySlides fade">
+           
+            <img src="img29.png" style="width:60% ;height: 600px; margin-left: 300px;">
+            
+            </div>
+            <div class="mySlides fade">
+            
+            <img src="img30.png" style="width:60% ;height: 600px; margin-left: 300px;">
+            
+            </div>
+            <div class="mySlides fade">
+            
+            <img src="img31.png" style="width:60% ;height: 600px; margin-left: 300px;">
+            
+            </div>
+            <div class="mySlides fade">
+            
+                <img src="img32.png" style="width:60% ;height: 600px; margin-left: 300px;">
+                
+                </div>
+            </div>
+            <br>
+     </div>
+    <h1 class="title" style="font-family: 'Poppins', cursive;margin-left: 100px;"> Wheat WPI(Price /Quintal)   </h1>
+    <div id="curve_chart" style="width: 1400px; height: 700px" ></div><br><br>
+    <h1 class="title" style="font-family: 'Poppins', cursive;margin-left: 100px;"> Rice WPI (Price /Quintal)  </h1>
+    <div id="piechart_3d" style="width: 1400px; height: 500px;"></div>
+    <h1 class="title" style="font-family: 'Poppins', cursive;margin-left: 100px;"> GDP Per Capita & Population  </h1>
+    <div id="chart_div" style="width: 1400px; height: 700px;"></div>
+    
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Prediction</h2>
+            <div class="skills-content">
+                <div>
+                    <h4><div class="text-1" style="color:black">Predict monthly Crop Prices in your state, for 2021 to 2025.</div></h4>
+                    <form id="form" onsubmit="exec();">
+                        <label for="crop(Rice/Wheat)" class="title" style="color:rgb(68, 216, 23)">Enter crop(Rice/Wheat):</label>
+                        <input type="text" id="crop" name="crop(Rice/Wheat)" style="color:black"><br><br><br><br><br>
+                        <label for="state" class="title" style="color:rgb(68, 216, 23)">Enter state:</label>
+                        <input type="text" id="state" name="state" style="color:black"><br><br><br><br><br>
+                        <label for="year" class="title" style="color:rgb(68, 216, 23)">Enter year:</label>
+                        <input type="text" id="year" name="month" style="color:black"><br><br><br><br><br>
+                        <label for="month" class="title" style="color:rgb(68, 216, 23)">Enter month:</label>
+                        <input type="text" id="month" name="month" style="color:black"><br><br><br><br><br>
+                        <!-- <input type="submit" value="Submit"> -->
+                        <script>
+                         function exec()
+{
+    var pred=[23,23,24,25,25,24,24,28,28,28,27,27,25,25,28,28,28,28,28,27,28,29,28,28,25,25,25,25,25,23,23,25,24,25,25,26,25,25,25,25,25,25,22,25,25,25,25,25,25,25,25,25,25,25,25,25,26,26,25,25,25,25,25,26,26,26,25,26,26,25,25,40,23,25,25,24,25,25,22,25,25,25,25,25,24,25,22,25,25,25,25,25,25,22,25,25,28,25,24,25,24,24,24,22,24,24,22,24,24,22,22,22,25,25,25,25,25,25,25,28,23,21,21,21,23,21,23,21,21,20,21,24,24,24,21,25,25,29,29,29,29,23,30,30,31,31,30,30,30,33,30,30,24,30,33,33,32,33,33,33,30,30,30,22,22,22,31,31,31,31,33,33,32,32,25,33,33,33,33,33,37,37,38,29,29,29,34,32,24,35,35,37,37,37,24,33,33,33,33,33,33,32,33,33,29,29,22,30,23,30,24,31,24,22,25,22,23,22,23,21,29,29,29,22,29,21,22,22,27,19,19,19,19,20,23,19,19,19,19,36,25,19,19,29,23,24,24,24,23,25,22,25,22,22,29,23,29,23,23,28,28,23,23,23,27,27,27,27,27,25,25,30,30,27,27,27,27,27,28,28,27,25,25,29,28,27,33,28,28,27,27,27,27,25,30,30,27,30,30,30,27,30,27,27,27,30,25,25,25,30,30,30,30,27,30,30,30,25,25,25,30,30,27,30,25,25,42,42,24,43,25,25,25,25,25,25,40,40,40,25,20,26,26,26,25,40,26,26,26,25,40,42,43,25,27,42,40,40,40,42,27,27,25,43,43,43,26,26,27,25,44,27,27,27,44,44,44,44,42,23,42,40,27,27,20,26,26,20,20,20,20,20,20,20,23,23,23,23,23,21,23,23,23,23,23,23,21,21,27,25,21,21,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,23,22,25,44,22,44,22,27,22,22,22,27,28,28,28,40,28,22,28,31,28,28,27,27,27,27,27,28,28,28,28,22,28,29,29,29,29,29,29,28,32,32,31,31,29,31,31,27,28,28,28,28,28,28,28,28,28,28,28,28,27,28,27,31,31,27,30,29,31,31,25,31,29,29,29,30,23,30,24,28,24,22,23,22,22,23,30,21,29,29,29,22,29,21,29,29,27,19,19,19,19,20,35,19,19,19,19,36,25,19,19,29,29,29,29,25,29,29,29,29,22,29,29,29,29,25,23,29,23,23,23,23,25,25,25,42,26,27,27,27,27,25,25,25,27,27,27,25,26,26,20,26,26,26,26,26,26,23,23,26,26,27,27,27,25,27,26,26,27,27,25,25,25,23,33,25,23,23,27,26,27,27,44,44,44,27,27,27,26,23,27,27,28,28,28,28,27,26,26,30,28,30,30,27,40,40,30,34,38,40,40,40,40,40,38,38,38,34,34,34,34,33,33,30,30,30,30,30,30,30,30,30,30,34,33,33,33,33,33,33,33,33,33,33,33,28,30,27,28,29,30,28,15,15,21,26,26,26,24,25,22,23,23,23,23,22,26,26,24,23,22,23,23,22,22,22,22,22,22,26,26,30,24,24,22,22,22,23,15,18,18,19,20,20,23,21,20,21,23,22,22,23,18,24,24,24,29,28,25,22,23,28,30,31,30,30,30,30,30,27,30,30,30,30,30,30,32,32,32,30,27,30,30,32,30,30,30,27,30,30,30,40,40,40,40,33,33,28,30,28,28,24,24,24,24,26,25,25,25,25,25,25,25,44,25,25,23,25,26,33,33,33,27,38,27,31,29,31,31,31,31,29,22,29,27,19,29,29,28,27,28,29,29,29,25,27,27,25,27,29,31,29,31,31,23,33,29,48,37,37,38,39,33,44,44,44,44,30,48,48,48,48,29,28,28,24,25,23,23,23,25,30,23,23,24,29,24,29,21,29,29,29,29,23,24,24,29,22,29,24,24,24,29,29,27,27,27,27,27,29,31,23,44,44,24,25,28,25,37,48,48,31,44,44,28,33,44,48,48,48,23,23,48,44,28,25,29,29,28,29,30,30,28,28,27,24,25,24,25,25,25,25,25,25,26,25,25,28,28,25,27,25,28,28,25,25,25,25,25,28,25,30,26,30,24,27,25,25,28,28,28,40,26,26,24,26,26,28,25,23,23,25,27,24,30,27,42,27,27,23,27,27,24,25,24,24,24,31,31,31,25,25,28,28,28,28,24,24,28,29,29,22,29,27,27,27,28,28,28,28,28,24,29,23,21,19,22,23,23,23,28,44,44,44,33,28,44,44,25,27,27,28,30,30,29,29,29,29,29,28,30,30,25,25,25,21,22,25,25,22,25,25,25,25,25,22,22,22,29,21,22,24,22,22,22,22,23,20,21,21,21,20,21,21,23,19,19,20,21,21,20,25,25,22,25,25,25,25,25,24,25,25,25,25,25,25,25,25,25,24,25,25,25,25,23,24,24,24,24,24,24,25,25,25,28,25,25,25,23,23,24,24,23,24,25,25,20,26,26,26,20,25,40,26,26,23,25,25,20,28,25,25,25,25,25,25,25,25,25,25,25,25,25,25,44,44,42,24,25,25,25,26,20,20,22,26,26,26,28,24,22,22,23,23,23,23,22,21,20,29,22,22,25,22,22,22,27,19,24,19,21,20,20,24,21,19,19,23,27,23,23,24,24,24,26,25,25,22,23,20,20,20,25,28,24,24,24,25,24,24,28,28,27,27,27,31,31,28,28,28,29,28,28,27,31,27,27,31,31,28,28,28,28,29,29,29,29,29,29,31,31,33,33,33,30,31,31,31,32,31,31,31,31,33,30,33,33,29,31,32,27,27,31,29,33,30,33,30,33,31,31,31,28,28,28,27,26,26,26,26,27,27,27,27,27,28,28,26,31,33,33,31,28,28,27,28,26,26,26,28,28,27,27,27,27,27,27,27,27,27,27,27,27,27,27,30,30,30,30,27,27,27,27,27,30,27,27,27,27,27,26,27,26,26,26,26,26,26,26,26,26,26,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,26,26,25,25,26,25,25,22,26,26,25,27,27,27,27,27,27,22,22,44,42,26,42,27,23,27,26,26,23,23,21,24,23,19,20,19,19,19,19,25,25,22,25,22,22,24,29,22,29,29,24,24,24,22,29,21,44,28,25,25,25,23,25,24,19,19,19,21,21,20,24,24,24,24,23,22,22,22,23,28,24,28,29,25,24,29,23,30,22,21,21,21,23,23,22,22,21,23,22,24,24,24,23,23,21,22,22,21,22,21,22,22,22,22,21,20,20,20,21,21,21,22,21,22,20,20,21,20,20,20,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,40,40,22,38,42,40,38,36,42,42,40,50,49,40,42,34,38,23,36,36,39,40,40,40,40,40,42,23,20,35,28,26,23,23,23,36,35,36,23,23,20,35,50,50,33,50,50,49,49,50,50,29,22,22,30,30,22,22,50,50,31,22,22,24,26,30,23,26,26,31,22,20,23,23,22,26,23,24,25,24,23,23,22,22,24,27,22,24,20,23,23,20,20,23,21,27,27,23,21,20,20,20,28,29,29,24,27,20,20,27,28,28,28,28,28,29,29,24,22,27,28,28,29,30,30,29,29,34,34,34,32,32,30,30,34,34,34,34,34,32,34,35,34,34,30,30,30,30,30,28,28,30,29,30,30,31,30,30,30,30,30,30,26,30,30,30,30,30,30,30,30,30,30,30,30,30,31,31,30,30,30,30,30,31,31,31,30,31,31,30,30,48,28,30,30,29,30,30,26,30,30,30,30,30,29,30,26,30,30,30,30,30,30,26,30,30,34,30,29,30,29,29,29,26,29,29,26,29,29,26,26,26,30,30,30,30,30,30,30,34,28,25,25,25,28,25,28,25,25,24,25,29,29,29,25,30,30,35,35,35,35,28,36,36,37,37,36,36,36,40,36,36,29,36,40,40,38,40,40,40,36,36,36,26,26,26,37,37,37,37,40,40,38,38,30,40,40,40,40,40,44,44,46,35,35,35,41,38,29,42,42,44,44,44,29,40,40,40,40,40,40,38,40,40,35,35,26,36,28,36,29,37,29,26,30,26,28,26,28,25,35,35,35,26,35,25,26,26,32,23,23,23,23,24,28,23,23,23,23,43,30,23,23,35,28,29,29,29,28,30,26,30,26,26,35,28,35,28,28,34,34,28,28,28,32,32,32,32,32,30,30,36,36,32,32,32,32,32,34,34,32,30,30,35,34,32,40,34,34,32,32,32,32,30,36,36,32,36,36,36,32,36,32,32,32,36,30,30,30,36,36,36,36,32,36,36,36,30,30,30,36,36,32,36,30,30,50,50,29,52,30,30,30,30,30,30,48,48,48,30,24,31,31,31,30,48,31,31,31,30,48,50,52,30,32,50,48,48,48,50,32,32,30,52,52,52,31,31,32,30,53,32,32,32,53,53,53,53,50,28,50,48,32,32,24,31,31,24,24,24,24,24,24,24,28,28,28,28,28,25,28,28,28,28,28,28,25,25,32,30,25,25,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,28,26,30,53,26,53,26,32,26,26,26,32,34,34,34,48,34,26,34,37,34,34,32,32,32,32,32,34,34,34,34,26,34,35,35,35,35,35,35,34,38,38,37,37,35,37,37,32,34,34,34,34,34,34,34,34,34,34,34,34,32,34,32,37,37,32,36,35,37,37,30,37,35,35,35,36,28,36,29,34,29,26,28,26,26,28,36,25,35,35,35,26,35,25,35,35,32,23,23,23,23,24,42,23,23,23,23,43,30,23,23,35,35,35,35,30,35,35,35,35,26,35,35,35,35,30,28,35,28,28,28,28,30,30,30,50,31,32,32,32,32,30,30,30,32,32,32,30,31,31,24,31,31,31,31,31,31,28,28,31,31,32,32,32,30,32,31,31,32,32,30,30,30,28,40,30,28,28,32,31,32,32,53,53,53,32,32,32,31,28,32,32,34,34,34,34,32,31,31,36,34,36,36,32,48,48,36,41,46,48,48,48,48,48,46,46,46,41,41,41,41,40,40,36,36,36,36,36,36,36,36,36,36,41,40,40,40,40,40,40,40,40,40,40,40,34,36,32,34,35,36,34,18,18,25,31,31,31,29,30,26,28,28,28,28,26,31,31,29,28,26,28,28,26,26,26,26,26,26,31,31,36,29,29,26,26,26,28,18,22,22,23,24,24,28,25,24,25,28,26,26,28,22,29,29,29,35,34,30,26,28,34,36,37,36,36,36,36,36,32,36,36,36,36,36,36,38,38,38,36,32,36,36,38,36,36,36,32,36,36,36,48,48,48,48,40,40,34,36,34,34,29,29,29,29,31,30,30,30,30,30,30,30,53,30,30,28,30,31,40,40,40,32,46,32,37,35,37,37,37,37,35,26,35,32,23,35,35,34,32,34,35,35,35,30,32,32,30,32,35,37,35,37,37,28,40,35,58,44,44,46,47,40,53,53,53,53,36,58,58,58,58,35,34,34,29,30,28,28,28,30,36,28,28,29,35,29,35,25,35,35,35,35,28,29,29,35,26,35,29,29,29,35,35,32,32,32,32,32,35,37,28,53,53,29,30,34,30,44,58,58,37,53,53,34,40,53,58,58,58,28,28,58,53,34,30,35,35,34,35,36,36,34,34,32,29,30,29,30,30,30,30,30,30,31,30,30,34,34,30,32,30,34,34,30,30,30,30,30,34,30,36,31,36,29,32,30,30,34,34,34,48,31,31,29,31,31,34,30,28,28,30,32,29,36,32,50,32,32,28,32,32,29,30,29,29,29,37,37,37,30,30,34,34,34,34,29,29,34,35,35,26,35,32,32,32,34,34,34,34,34,29,35,28,25,23,26,28,28,28,34,53,53,53,40,34,53,53,30,32,32,34,36,36,35,35,35,35,35,34,36,36,30,30,30,25,26,30,30,26,30,30,30,30,30,26,26,26,35,25,26,29,26,26,26,26,28,24,25,25,25,24,25,25,28,23,23,24,25,25,24,30,30,26,30,30,30,30,30,29,30,30,30,30,30,30,30,30,30,29,30,30,30,30,28,29,29,29,29,29,29,30,30,30,34,30,30,30,28,28,29,29,28,29,30,30,24,31,31,31,24,30,48,31,31,28,30,30,24,34,30,30,30,30,30,30,30,30,30,30,30,30,30,30,53,53,50,29,30,30,30,31,24,24,26,31,31,31,34,29,26,26,28,28,28,28,26,25,24,35,26,26,30,26,26,26,32,23,29,23,25,24,24,29,25,23,23,28,32,28,28,29,29,29,31,30,30,26,28,24,24,24,30,34,29,29,29,30,29,29,34,34,32,32,32,37,37,34,34,34,35,34,34,32,37,32,32,37,37,34,34,34,34,35,35,35,35,35,35,37,37,40,40,40,36,37,37,37,38,37,37,37,37,40,36,40,40,35,37,38,32,32,37,35,40,36,40,36,40,37,37,37,34,34,34,32,31,31,31,31,32,32,32,32,32,34,34,31,37,40,40,37,34,34,32,34,31,31,31,34,34,32,32,32,32,32,32,32,32,32,32,32,32,32,32,36,36,36,36,32,32,32,32,32,36,32,32,32,32,32,31,32,31,31,31,31,31,31,31,31,31,31,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,31,31,30,30,31,30,30,26,31,31,30,32,32,32,32,32,32,26,26,53,50,31,50,32,28,32,31,31,28,28,25,29,28,23,24,23,23,23,23,30,30,26,30,26,26,29,35,26,35,35,29,29,29,26,35,25,53,34,30,30,30,28,30,29,23,23,23,25,25,24,29,29,29,29,28,26,26,26,28,34,29,34,35,30,29,35,28,36,26,25,25,25,28,28,26,26,25,28,26,29,29,29,28,28,25,26,26,25,26,25,26,26,26,26,25,24,24,24,25,25,25,26,25,26,24,24,25,24,24,24,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,48,48,26,46,50,48,46,43,50,50,48,60,59,48,50,41,46,28,43,43,47,48,48,48,48,48,50,28,24,42,34,31,28,28,28,43,42,43,28,28,24,42,60,60,40,60,60,59,59,60,60,35,26,26,36,36,26,26,60,60,37,26,26,29,31,36,28,31,31,37,26,24,28,28,26,31,28,29,30,29,28,28,26,26,29,32,26,29,24,28,28,24,24,28,25,32,32,28,25,24,24,24,34,35,35,29,32,24,24,32,34,34,34,34,34,35,35,29,26,32];
+   
+     document.getElementById("form").submit();
+     var c=(document.getElementById("crop").value);
+     c=c.toLowerCase().trim();
+     var s=(document.getElementById("state").value);
+     s=s.toLowerCase().trim();
+     var y=+(document.getElementById("year").value);
+     var m=+(document.getElementById("month").value);
+     sl=['andhra pradesh', 'assam', 'arunachal pradesh', 'bihar', 'goa', 'gujarat', 'telangana', 'jharkhand', 'west bengal', 'karnataka', 'kerala', 'madhya pradesh', 'maharashtra', 'manipur', 'meghalaya', 'mizoram', 'nagaland', 'orissa', 'punjab', 'rajasthan', 'sikkim', 'tamil nadu', 'tripura', 'uttaranchal', 'uttar pradesh', 'haryana', 'himachal pradesh', 'chhattisgarh'];
+     var i,sno=-1;
+     for(i=0;i<28;i++)
+     {
+         if(sl[i]==s)
+         {
+             sno=i;
+             break;
+         }
+
+     }
+     var ref=-1;
+     if(c=="wheat")
+     {
+         ref=0;
+     }
+     else if(c=="rice")
+     {
+         ref=1;
+     }
+    
+     if (sno==-1)
+     {
+         alert("Your input is not one of India's 28 states.");return;
+     }
+     if(y<2021|| y>2025)
+        {
+            alert("There is only 5 years data-2021,2022,2023,2024,2025.\n");return;
+        }
+     if(m<0||m>12)
+        {
+            alert("There are only 12 months in the year.\n");return;
+        }
+     if(ref==-1)
+        {
+            alert("There are only 2 crops->wheat and rice.");return;
+        }
+     var ctr=1620*ref+60*sno+12*(y-2021)+(m-1);
+     alert("Cost of "+c.toUpperCase()+" in month number "+m+" of year "+y+" in state "+s.toUpperCase()+" is:\n"+pred[ctr]+"₹.\nError margin:::+-5%");
+     return;
+}
+                        </script>
+                      </form>
+                      <div onclick="exec()" class="title" style="color:rgb(68, 216, 23); background-color:rgb(0,0,0);">Submit the form by clicking this.</div>
+                    <p>Our project takes in <b>monthly</b> data for the last 5 years for 15 parameters affecting a state's rice & wheat prices:<br></p>
+                    <ol>
+                        <li>Population</li>
+                        <li>Percentage of rural and urban population</li>
+                        <li>GDP Per Capita</li>
+                        <li>Rice Rate/Kg</li>
+                        <li>Wheat Rate/Kg.</li>
+                        <li>Average Temperature.</li>
+                        <li>Total Rainfall</li>
+                        <li>WPI of Rice</li>
+                        <li>WPI of Wheat</li>
+                        <li>Diesel Prices</li>
+                        <li>₹ vs $</li>
+                        <li>Staple Crop Preference</li>
+                        <li>Rice Pref Percent</li>
+                        <li>Wheat Pref Percent</li>
+                        <li>Natural Disaster</li>
+                    </ol>
+                    
+                        
+    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+   
+
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">T9 Group</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="ny.jpeg" alt="">
+                        <div class="text">Neil Yardi</div>
+                        <p><b>CONTRIBUTIONS:</b><br>Dataset Building<br>Data Visualization<br>Data Science</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="py.jpg" alt="">
+                        <div class="text">Prathamesh Yadav</div>
+                        <p><b>CONTRIBUTIONS:</b><br>Dataset Building<br>Data Visualization<br>Data Science</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="yf.jpeg" alt="">
+                        <div class="text">Yahya Farooqui</div>
+                        <p><b>CONTRIBUTIONS:</b><br>Dataset Building<br>Website Hosting<br>Data Science</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="sy.jpeg" alt="">
+                        <div class="text">Sharvari Yadnik</div>
+                        <p><b>CONTRIBUTIONS:</b><br>Dataset Building<br>Website Beautification<br>Data Visualization</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="yy.jpg" alt="">
+                        <div class="text">Yash Yadav</div>
+                        <p><b>CONTRIBUTIONS:</b><br>Dataset Building<br>Website Structure<br>Data Science</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Feedback</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>We would love to hear your comments and suggestions as they make us better, smarter and more aware and help us improve.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Group ID</div>
+                                <div class="sub-title">T9</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">VIT Pune, 666, Upper Market Rd, Upper Indira Nagar, Bibwewadi, Pune, Maharashtra 411037</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title"><a href="mailto: t9group02@gmail.com">t9group02@gmail.com</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-book"></i>
+                            <div class="info">
+                                <div class="head">Resources</div>
+                                <div class="sub-title"><a href="https://docs.google.com/presentation/d/1CMPbkMm5JXiDyf1skRWWL-cbExj-XYeq1mMFhkaZyXw/edit#slide=id.ge7d9098e63_2_45">PPT</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Reach out to us.</div>
+                    <form action="https://formspree.io/f/mvodqbla"  method="POST">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" name="w3lName" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email"name="w3lSender" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" name="w3lSubject"  required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." name="w3lMessage" required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="mailto: t9group02@gmail.com">T9 Group</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+<script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+</html>
